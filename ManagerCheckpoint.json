@@ -1,0 +1,8 @@
+{
+    "root_directory": "F:\\Pictures\\Art",
+    "save_directory": "F:\\Workspaces\\Python\\wallpaper",
+    "update_period_minutes": 10,
+    "legal_extensions": [
+        ".JPG", ".png", ".jpg", ".PNG", ".gif", ".tif"
+    ]
+}
