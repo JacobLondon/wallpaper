@@ -2,5 +2,5 @@
 
 int main(void)
 {
-    return system("python F:\\Workspaces\\Python\\wallpaper\\wallpaper.py --server &");
+    return system("python F:\\Workspaces\\Python\\wallpaper\\wallpaper.py --server");
 }
