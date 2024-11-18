@@ -245,7 +245,8 @@ class WallpaperManager:
     def favorite(self):
         self.lock.acquire()
 
-        self.favorites_filepaths.append(self.chosen)
+        if self.chosen not in self.favorites_filepaths:
+            self.favorites_filepaths.append(self.chosen)
 
         try:
             if self.file_out:
