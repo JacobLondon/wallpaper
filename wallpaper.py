@@ -214,7 +214,7 @@ class WallpaperManager:
         # and aren't disliked
         self.disliked_filepath = os.path.join(save_directory, WallpaperManager.CHECKPOINT_DISLIKED)
         with open(self.disliked_filepath, "r") as fp:
-            self.disliked_filepaths = json.load(fp)
+            self.disliked_filepaths = set(json.load(fp))
 
         indexed = list(filter(
             lambda filepath: filepath not in self.disliked_filepaths, indexed))
